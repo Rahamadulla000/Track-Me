@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+/* Geometric Grid Background Pattern */
+.geometric-dots {
+  background-image: radial-gradient(rgba(148, 163, 184, 0.15) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+.dark .geometric-dots {
+  background-image: radial-gradient(rgba(30, 41, 59, 0.5) 1.5px, transparent 1.5px);
+}
+
+/* Precision status indicators */
+.status-indicator-active {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: #34d399; /* emerald-400 */
+}
+
+/* Custom Scrollbars to keep UI ultra-clean and technical */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Leaflet dark theme map inversion support if tiles take a moment to load */
+.leaflet-container {
+  background: #f1f5f9 !important;
+}
+
+.dark .leaflet-container {
+  background: #020617 !important;
+}
+
+/* Ensure Leaflet popups are elegantly styled with Tailwind font */
+.leaflet-popup-content-wrapper {
+  border-radius: 12px !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  background-color: white !important;
+  border: 1px solid #e2e8f0 !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+.dark .leaflet-popup-content-wrapper {
+  background-color: #0f172a !important;
+  border: 1px solid #1e293b !important;
+  color: white !important;
+}
+
+.dark .leaflet-popup-tip {
+  background-color: #0f172a !important;
+}
+
+/* Custom CSS helper styling for Geometric Balance Card Elements */
+.geo-card {
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dark .geo-card {
+  border: 1px solid rgba(30, 41, 59, 0.8);
+  background-color: rgba(15, 23, 42, 0.75);
+}
+
+.geo-card:hover {
+  border-color: rgba(96, 165, 250, 0.5);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+}
+
+.dark .geo-card:hover {
+  border-color: rgba(96, 165, 250, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Header Typography Accent */
+.geo-header-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  color: #64748b; /* slate-500 */
+}
+
+.dark .geo-header-tag {
+  color: #94a3b8; /* slate-400 */
+}

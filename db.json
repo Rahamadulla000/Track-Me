@@ -1,0 +1,106 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Demo User",
+      "email": "user@trackme.com",
+      "password_hash": "$2b$10$vhXcistwvI6k/Ewx3squn.XygigBDKVkFVWF5j8FYRkefKPxFiPkS",
+      "role": "user",
+      "tracking_enabled": true,
+      "created_at": "2026-07-13T18:28:47.012Z"
+    },
+    {
+      "id": 2,
+      "name": "Demo Admin",
+      "email": "admin@trackme.com",
+      "password_hash": "$2b$10$Z5RKIHY38AFdQ8qdLZswW.qQE7zpyi6LX0/gEwbqgtevhG9UEIDEm",
+      "role": "admin",
+      "tracking_enabled": false,
+      "created_at": "2026-06-20T18:28:47.094Z"
+    },
+    {
+      "id": 3,
+      "name": "rahamadulla",
+      "email": "rboss5066@gmail.com",
+      "password_hash": "$2b$10$Wew6TJUqhvmLNyPFbWqKguB3pOaHLWfaUamPxFgNg4zGviXyf6JT.",
+      "role": "admin",
+      "tracking_enabled": true,
+      "created_at": "2026-07-20T18:30:59.934Z"
+    },
+    {
+      "id": 4,
+      "name": "rama",
+      "email": "rama@gmail.com",
+      "password_hash": "$2b$10$dCg7Tgy/dizxwCQESb1FKOhwO/utYaospvcER.L5aKX.HVlo2r6le",
+      "role": "user",
+      "tracking_enabled": true,
+      "created_at": "2026-07-20T18:32:18.551Z"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "latitude": 37.7749,
+      "longitude": -122.4194,
+      "accuracy": 15,
+      "created_at": "2026-07-20T18:18:47.094Z"
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "latitude": 37.7752,
+      "longitude": -122.4182,
+      "accuracy": 12,
+      "created_at": "2026-07-20T18:23:47.094Z"
+    },
+    {
+      "id": 3,
+      "user_id": 1,
+      "latitude": 37.7755,
+      "longitude": -122.417,
+      "accuracy": 10,
+      "created_at": "2026-07-20T18:28:47.094Z"
+    },
+    {
+      "id": 4,
+      "user_id": 4,
+      "latitude": 11.07133034943142,
+      "longitude": 77.360851173382,
+      "accuracy": 141,
+      "created_at": "2026-07-20T18:32:42.755Z"
+    },
+    {
+      "id": 5,
+      "user_id": 4,
+      "latitude": 11.07133034943142,
+      "longitude": 77.360851173382,
+      "accuracy": 141,
+      "created_at": "2026-07-20T18:33:47.401Z"
+    },
+    {
+      "id": 6,
+      "user_id": 4,
+      "latitude": 11.07133034943142,
+      "longitude": 77.360851173382,
+      "accuracy": 141,
+      "created_at": "2026-07-20T18:33:55.449Z"
+    },
+    {
+      "id": 7,
+      "user_id": 4,
+      "latitude": 11.07133034943142,
+      "longitude": 77.360851173382,
+      "accuracy": 141,
+      "created_at": "2026-07-20T18:34:09.100Z"
+    },
+    {
+      "id": 8,
+      "user_id": 4,
+      "latitude": 11.07164248383172,
+      "longitude": 77.36134394328232,
+      "accuracy": 141,
+      "created_at": "2026-07-21T03:49:14.901Z"
+    }
+  ]
+}
